@@ -1,0 +1,99 @@
+ion-content{
+  --overflow: hidden;
+  
+}
+
+.item{
+  margin-bottom: 1vh;
+   position: relative;
+    top: 1.5vh;
+}
+
+.formulario{
+
+  margin-top: -270px;
+   width:95%;
+}
+.segurar{
+
+  height: 210px;
+   background-color: #FBFFF1;
+}
+
+.botao{
+  width: 70%; 
+  background-color: #734458 ;
+  margin-top:4vh;
+  color: white;
+}
+
+img {
+margin: auto;
+display: block;
+margin-top: -50px;
+ width: 430px;
+ position: relative;
+  z-index: 2
+}
+
+svg {
+display: inline-block;
+position: absolute;
+top: 0;
+left: 0;
+
+}
+.container {
+display: inline-block;
+position: relative;
+width: 100%;
+padding-bottom: 100%;
+vertical-align: middle;
+overflow: hidden;
+
+}
+
+
+
+//Animação--------------------------------------------------------------------------------------//
+@keyframes waveAnimation {
+0% {
+  transform: translateY(0);
+}
+50% {
+  transform: translateY(-10px); /* Altere a altura desejada do movimento */
+}
+100% {
+  transform: translateY(0);
+}
+}
+
+#wave {
+animation: waveAnimation 2s linear infinite; /* Altere a duração da animação, se necessário */
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1920px) {
+
+
+  img {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+   margin: auto;
+   height: 450px;
+    }
+   
+
+
+    svg {
+      display: none;
+      
+      
+      }
+      .container {
+        display: none;
+        
+        
+        }
+}
